@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Tagesschrift&display=swap');
+
+body {
+    font-family: 'Tagesschrift', Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 5px;
+    background-image: url(https://getwallpapers.com/wallpaper/full/d/5/c/952543-capcom-wallpaper-1920x1080-for-computer.jpg), url(https://static.wikia.nocookie.net/devilmaycry/images/3/32/Apex_of_Temen-ni-gru.jpg/revision/latest?cb=20110915152624);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: #f0f0f0;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgba(3, 133, 255, 0.3);
+    color: #ffffff;
+    line-height:1.6;
+ }
+
+header{
+    background-color: rgba(154, 209, 255, 0.664);
+    padding: 20px;
+    text-align: center;
+    color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+}
+
+ main {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 1000px;
+    background-color: rgba(190, 230, 255, 0.526);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgba(0, 0, 0, 0.534);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #f0f0f0;
+}
