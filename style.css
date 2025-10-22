@@ -17,6 +17,10 @@ body {
     padding:20px;
 }
 
+.card {
+    text-align: center;
+}
+
 header{
     background: linear-gradient(90deg, rgba(3,133,255,0.12), rgba(154,209,255,0.08));
     padding: 20px;
@@ -53,6 +57,7 @@ nav a:hover{ background: rgba(255,255,255,0.05); }
 .main-card{
     background: rgba(255,255,255,0.03);
     margin-top:18px;
+    justify-content:center;
     padding:18px;
     border-radius:10px;
     box-shadow: 0 6px 18px rgba(0,0,0,0.5);
@@ -75,6 +80,7 @@ h1,h2,h3{ margin:8px 0; color:#e6f7ff; }
 p{ margin:8px 0 12px; color: #dbefff; }
 
 .grid {
+    
     display:grid;
     grid-template-columns: repeat(auto-fit,minmax(240px,1fr));
     gap:12px;
@@ -82,6 +88,7 @@ p{ margin:8px 0 12px; color: #dbefff; }
 }
 
 .card-item{
+
     background: rgba(255,255,255,0.02);
     padding:12px;
     border-radius:8px;
