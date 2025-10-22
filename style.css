@@ -1,66 +1,96 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Tagesschrift&display=swap');
 
+*{box-sizing:border-box;}
 body {
     font-family: 'Tagesschrift', Arial, Helvetica, sans-serif;
     margin: 0;
-    padding: 5px;
-    background-image: url(https://getwallpapers.com/wallpaper/full/d/5/c/952543-capcom-wallpaper-1920x1080-for-computer.jpg), url(https://static.wikia.nocookie.net/devilmaycry/images/3/32/Apex_of_Temen-ni-gru.jpg/revision/latest?cb=20110915152624);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-color: #f0f0f0;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: rgba(3, 133, 255, 0.3);
-    color: #ffffff;
+    padding: 0;
+    background-color: #0b1020;
+    color: #fff;
     line-height:1.6;
  }
 
+.container{
+    max-width:1000px;
+    margin:0 auto;
+    padding:20px;
+}
+
 header{
-    background-color: rgba(154, 209, 255, 0.664);
+    background: linear-gradient(90deg, rgba(3,133,255,0.12), rgba(154,209,255,0.08));
     padding: 20px;
     text-align: center;
     color: white;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-
+    box-shadow: 0 2px 6px rgba(0,0,0,0.4);
 }
 
- main {
-    padding: 20px;
-    margin: 20px auto;
-    max-width: 1000px;
-    background-color: rgba(190, 230, 255, 0.526);
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-header h1 {
-    margin: 0;
-    font-size: 2rem;
+header img.logo{
+    max-height:90px;
+    display:block;
+    margin:0 auto 10px;
 }
 
 nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin-top: 10px;
-    display: flex;
-    justify-content: center;
+    list-style: none;
+    display:flex;
+    justify-content:center;
+    gap:18px;
+    padding:0;
+    margin:0;
 }
 
-nav ul li {
-    margin: 0 15px;
+nav a {
+    color: #fff;
+    text-decoration:none;
+    font-weight:700;
+    padding:6px 10px;
+    border-radius:6px;
 }
 
-nav ul li a {
-    color: white;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: rgba(0, 0, 0, 0.534);
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 1.1rem;
-    transition: color 0.3s ease;
+nav a:hover{ background: rgba(255,255,255,0.05); }
+
+.main-card{
+    background: rgba(255,255,255,0.03);
+    margin-top:18px;
+    padding:18px;
+    border-radius:10px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.5);
 }
 
-nav ul li a:hover {
-    color: #f0f0f0;
+.hero {
+    display:flex;
+    gap:18px;
+    align-items:center;
+    flex-wrap:wrap;
+}
+
+.hero img {
+    max-width:320px;
+    border-radius:8px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.6);
+}
+
+h1,h2,h3{ margin:8px 0; color:#e6f7ff; }
+p{ margin:8px 0 12px; color: #dbefff; }
+
+.grid {
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(240px,1fr));
+    gap:12px;
+    margin-top:12px;
+}
+
+.card-item{
+    background: rgba(255,255,255,0.02);
+    padding:12px;
+    border-radius:8px;
+    min-height:120px;
+}
+
+.footer{
+    text-align:center;
+    margin:20px 0;
+    color:#bcd9ff;
+    font-size:0.9rem;
 }
