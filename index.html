@@ -44,21 +44,50 @@
 
 </html>
 
-<audio id="guarana">
+<style>
+    /* Centraliza o botão e remove aparência padrão */
+    #tocarGUarana {
+      display: block;
+      margin: 20px auto;
+      border: none;
+      background: none;
+      cursor: pointer;
+    }
+
+    /* Estilo da imagem */
+    #tocarGUarana img {
+      width: 120px;
+      height: auto;
+      border-radius: 10px; /* cantos arredondados */
+      transition: transform 0.2s;
+      display: block;
+      margin: 0 auto;
+    }
+
+    /* Efeito ao passar o mouse */
+    #tocarGUarana:hover img {
+      transform: scale(1.1); /* aumenta um pouquinho no hover */
+    }
+  </style>
+</head>
+<body>
+  <audio id="guarana">
     <source src="limbus-company-don-quixote-made-with-Voicemod.mp3" type="audio/mpeg">
-    Seu navegador não suporta esse elemento de áudio
-</audio>
+    Seu navegador não suporta esse elemento de áudio.
+  </audio>
 
-<button id="tocarGUarana">
-    <img src="imgs/302px-DonQuixoteLCB-Profile.Idle.webp" alt="302px-DonQuixoteLCB-Profile.webp">
-</button>
+  <button id="tocarGUarana">
+    <img src="don-quixote-from-limbus-company-major-spoilers-on-slides-4-6-v0-ap16czjm4mgf1-convertido-de-png (1).png" alt="Don Quixote">
+  </button>
 
-<script>
+  <script>
     const meuAudio = document.getElementById('guarana');
     const botaoTocarSom = document.getElementById('tocarGUarana');
 
-    
-    botaoTocarSom.addEventListener('click', function() {
-        meuAudio.play(); 
-      });
-    </script>
+    botaoTocarSom.addEventListener('click', () => {
+      meuAudio.currentTime = 0;
+      meuAudio.play();
+    });
+  </script>
+</body>
+</html>
