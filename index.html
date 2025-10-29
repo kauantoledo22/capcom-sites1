@@ -50,9 +50,15 @@
 </audio>
 
 <button id="tocarGUarana">
-    <img src="imgs/Hornet_Idle.webp" alt="Hornet" class="easter-egg-2">
+    <img src="imgs/302px-DonQuixoteLCB-Profile.Idle.webp" alt="302px-DonQuixoteLCB-Profile.webp">
 </button>
 
 <script>
     const meuAudio = document.getElementById('guarana');
     const botaoTocarSom = document.getElementById('tocarGUarana');
+
+    
+    botaoTocarSom.addEventListener('click', function() {
+        meuAudio.play(); 
+      });
+    </script>
