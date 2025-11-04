@@ -47,12 +47,14 @@
 <style>
     /* Centraliza o botão e remove aparência padrão */
     #tocarGUarana {
-      display: block;
-      margin: 20px auto;
-      border: none;
-      background: none;
-      cursor: pointer;
-    }
+  position: fixed;
+  bottom: 20px;  /* distância da parte de baixo */
+  right: 20px;   /* distância da direita */
+  border: none;
+  background: none;
+  cursor: pointer;
+  z-index: 1000; /* garante que fique por cima de tudo */
+}
 
     /* Estilo da imagem */
     #tocarGUarana img {
@@ -91,7 +93,3 @@
   </script>
 </body>
 </html>
-
-
-
-   
