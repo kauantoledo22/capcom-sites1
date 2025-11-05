@@ -1,97 +1,219 @@
 <!DOCTYPE html>
-<html lang="pt-Br">
-
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site da Capcom</title>
     <link rel="stylesheet" href="style.css">
-    <title>Site da capcom</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+        }
+
+        header {
+            background-color: #0a0a0a;
+            padding: 20px 10px;
+        }
+
+        header img {
+            width: 500px;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 20px 0 0;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 17px;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #00a2ff;
+        }
+
+        main {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
+            text-align: left; /* mantém o texto legível */
+        }
+
+        section {
+            background-color: #111;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 25px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+        }
+
+        h2 {
+            color: #00a2ff;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #0a0a0a;
+            color: #888;
+            font-size: 14px;
+            margin-top: 40px;
+        }
+
+        /* Botão de áudio */
+        #tocarGUarana {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            border: none;
+            background: none;
+            cursor: pointer;
+            z-index: 1000;
+        }
+
+        #tocarGUarana img {
+            width: 120px;
+            height: auto;
+            border-radius: 10px;
+            transition: transform 0.2s;
+            display: block;
+            margin: 0 auto;
+        }
+
+        #tocarGUarana:hover img {
+            transform: scale(1.1);
+        }
+    </style>
 </head>
 
 <body>
     <header>
-        <img src="https://download.logo.wine/logo/Capcom/Capcom-Logo.wine.png" style="height: 500px; width: 700;">
+        <img src="https://download.logo.wine/logo/Capcom/Capcom-Logo.wine.png" alt="Logo Capcom">
         <nav>
             <ul>
-                <li><a href="./resident.html"> Resident Evil</a></li>
-                <li><a href="./devilmaycry.html"> Devil May Cry</a></li>
-                <li><a href="./street.html"> Street Fighter</a></li>
-                <li><a href="./megaman.html"> Mega Man</a></li>
-                <li><a href="./monster.html"> Monster Hunter </a></li>
-                <li><a href="./personagens.html"> personagens </a></li>
-
-
+                <li><a href="./resident.html">Resident Evil</a></li>
+                <li><a href="./devilmaycry.html">Devil May Cry</a></li>
+                <li><a href="./street.html">Street Fighter</a></li>
+                <li><a href="./megaman.html">Mega Man</a></li>
+                <li><a href="./monster.html">Monster Hunter</a></li>
+                
             </ul>
         </nav>
     </header>
+
     <main>
-        <section id="cursos">
+        <section>
+            <h2>O que é a Capcom?</h2>
+            <p>
+                A <strong>Capcom Co., Ltd.</strong> é uma empresa multinacional japonesa desenvolvedora e publicadora de jogos eletrônicos,
+                fundada em <strong>1979</strong> e sediada em <strong>Osaka, Japão</strong>. Ela é responsável por algumas das franquias
+                mais amadas do mundo dos videogames, como <em>Resident Evil</em>, <em>Street Fighter</em>, <em>Mega Man</em>,
+                <em>Devil May Cry</em> e <em>Monster Hunter</em>.
+            </p>
+            <p>
+                Com mais de quatro décadas de história, a Capcom é reconhecida por sua inovação, qualidade e pela criação de personagens
+                e universos marcantes que moldaram a cultura gamer mundial.
+            </p>
+        </section>
 
+        <section>
+            <h2>O que vamos falar neste site?</h2>
+            <p>
+                Este site foi criado para apresentar os principais jogos e franquias desenvolvidas pela Capcom,
+                explorando suas origens, curiosidades e importância para o mundo dos videogames.
+            </p>
+            <p>
+                Aqui você vai descobrir como cada jogo se destacou, quais foram seus maiores sucessos,
+                e de que forma contribuíram para a evolução da indústria. Além disso, mostraremos a importância
+                da Capcom na criação de heróis, vilões e histórias que marcaram gerações.
+            </p>
+        </section>
 
-            <div class="card">
-                <h2>Capcom</h2>
-                <h3>oque é capcom?</h3>
-                <p>Capcom Co., Ltd. é uma empresa multinational desenvolvedora e publicadora japonesa de jogos
-                    eletrônicos sediada em Osaka, Japão.</p>
-            </div>
-            <div class="card">
-                <h3>oque vamos fala sobre?</h3>
-                <p>Iremos fala sobre os jogos que mais gostamos dessa empresa,e cita a importancia dos jogos para o
-                    mundo dos videogames.</p>
+        <section>
+            <h2>História e legado</h2>
+            <p>
+                A Capcom começou sua trajetória nos fliperamas do Japão, com jogos simples, mas viciantes.
+                Com o tempo, expandiu para consoles e computadores, trazendo experiências inovadoras
+                e narrativas profundas.
+            </p>
+            <p>
+                Desde o lançamento de <em>Street Fighter</em> em 1987 até os sucessos modernos como
+                <em>Resident Evil 4 Remake</em> e <em>Monster Hunter Rise</em>,
+                a Capcom continua evoluindo sem perder sua identidade.
+            </p>
+            <p>
+                Hoje, a empresa é sinônimo de qualidade e criatividade, sempre buscando surpreender
+                os jogadores com novas ideias e tecnologias.
+            </p>
+        </section>
 
-            </div>
+        <section>
+            <h2>Curiosidades sobre a Capcom</h2>
+            <ul>
+                <li>O nome “Capcom” vem da abreviação de <em>Capsule Computers</em>, termo criado pela empresa.</li>
+                <li>Foi uma das primeiras desenvolvedoras a criar jogos com cenas cinematográficas.</li>
+                <li>Franquias como <em>Resident Evil</em> e <em>Street Fighter</em> ultrapassaram 50 milhões de cópias vendidas cada.</li>
+                <li>Personagens da Capcom aparecem juntos em crossovers, como <em>Marvel vs. Capcom</em>.</li>
+                <li>Em 2023, a Capcom alcançou mais de 500 milhões de jogos vendidos no total.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Importância para o mundo dos videogames</h2>
+            <p>
+                A Capcom revolucionou o conceito de franquias de sucesso, com histórias envolventes,
+                jogabilidade marcante e personagens inesquecíveis. Seus jogos influenciaram não apenas
+                o mercado de games, mas também o cinema, as animações e a cultura pop mundial.
+            </p>
+            <p>
+                A marca Capcom é hoje símbolo de criatividade, dedicação e respeito ao público gamer,
+                consolidando seu lugar entre as maiores empresas da história dos videogames.
+            </p>
         </section>
     </main>
-</body>
 
-</html>
+    <footer>
+        <p>© 2025 Site da Capcom — Projeto escolar</p>
+    </footer>
 
-<style>
-    
-    #tocarGUarana {
-  position: fixed;
-  bottom: 20px; 
-  right: 20px;   
-  border: none;
-  background: none;
-  cursor: pointer;
-  z-index: 1000; 
-}
+    <!-- Botão de áudio -->
+    <audio id="guarana">
+        <source src="limbus-company-don-quixote-made-with-Voicemod.mp3" type="audio/mpeg">
+        Seu navegador não suporta esse elemento de áudio.
+    </audio>
 
-    
-    #tocarGUarana img {
-      width: 120px;
-      height: auto;
-      border-radius: 10px; 
-      transition: transform 0.2s;
-      display: block;
-      margin: 0 auto;
-    }
+    <button id="tocarGUarana">
+        <img src="don-quixote-from-limbus-company-major-spoilers-on-slides-4-6-v0-ap16czjm4mgf1-convertido-de-png (1).png" alt="Don Quixote">
+    </button>
 
-    
-    #tocarGUarana:hover img {
-      transform: scale(1.1) 
-    }
-  </style>
-</head>
-<body>
-  <audio id="guarana">
-    <source src="limbus-company-don-quixote-made-with-Voicemod.mp3" type="audio/mpeg">
-    Seu navegador não suporta esse elemento de áudio.
-  </audio>
-
-  <button id="tocarGUarana">
-    <img src="don-quixote-from-limbus-company-major-spoilers-on-slides-4-6-v0-ap16czjm4mgf1-convertido-de-png (1).png" alt="Don Quixote">
-  </button>
-
-  <script>
-    const meuAudio = document.getElementById('guarana');
-    const botaoTocarSom = document.getElementById('tocarGUarana');
-
-    botaoTocarSom.addEventListener('click', () => {
-      meuAudio.currentTime = 0;
-      meuAudio.play();
-    });
-  </script>
+    <script>
+        const meuAudio = document.getElementById('guarana');
+        const botaoTocarSom = document.getElementById('tocarGUarana');
+        botaoTocarSom.addEventListener('click', () => {
+            meuAudio.currentTime = 0;
+            meuAudio.play();
+        });
+    </script>
 </body>
 </html>

@@ -1,74 +1,136 @@
 <!DOCTYPE html>
-<html lang="pt-Br">
+<html lang="pt-BR">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personagens Capcom</title>
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/css/lightslider.min.css" />
   <link rel="stylesheet" href="style.css">
-  <title>Protagonistas — Capcom</title>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/js/lightslider.min.js"></script>
 </head>
 
 <body>
   <header>
-    <img src="https://download.logo.wine/logo/Capcom/Capcom-Logo.wine.png" style="height: 500px; width: 700px;">
     <nav>
       <ul>
-        <li><a href="./index.html">Home</a></li>
         <li><a href="./resident.html">Resident Evil</a></li>
         <li><a href="./devilmaycry.html">Devil May Cry</a></li>
         <li><a href="./street.html">Street Fighter</a></li>
         <li><a href="./megaman.html">Mega Man</a></li>
         <li><a href="./monster.html">Monster Hunter</a></li>
-        <li><a href="./personagens.html"> personagens </a></li>
+        
       </ul>
     </nav>
   </header>
 
-  <main>
-    <section id="cursos">
-      <div class="card">
-        <h2>Protagonistas da Capcom</h2>
-        <p>A Capcom é conhecida por criar personagens icônicos que marcaram gerações.
-          Abaixo estão alguns dos protagonistas mais famosos de suas franquias.</p>
-      </div>
+  <div class="container">
+    <ul id="autoWidth" class="cs-hidden">
+      <li class="item-a">
+        <img src="https://upload.wikimedia.org/wikipedia/en/6/6b/Ryu_Street_Fighter.png" alt="Ryu">
+      </li><li><a href="./personagens.html" class="ativo">Personagens</a></li>
+      <li class="item-a">
+        <img src="https://upload.wikimedia.org/wikipedia/en/d/d2/Megaman.png" alt="Mega Man">
+      </li>
+      <li class="item-a">
+        <img src="https://upload.wikimedia.org/wikipedia/en/0/0f/Dante_DMC5.png" alt="Dante">
+      </li>
+      <li class="item-a">
+        <img src="https://upload.wikimedia.org/wikipedia/en/7/7e/Leon_Scott_Kennedy.png" alt="Leon Kennedy">
+      </li>
+      <li class="item-a">
+        <img src="https://upload.wikimedia.org/wikipedia/en/b/b2/Monster_Hunter_Rathalos_Render.png" alt="Rathalos">
+      </li>
+    </ul>
+  </div>
 
-      <div class="card">
-        <h3>Leon S. Kennedy (Resident Evil)</h3>
-        <img src=https://www.residentevildatabase.com/wp-content/uploads/2022/06/resident-evil-4-remake-showcase-jun22-01.jpg" 
-             alt="Leon Kennedy" style="width: 300px; border-radius: 10px;">
-        <p>Agente especial que luta contra ameaças biológicas. Um dos personagens mais reconhecidos da franquia.</p>
-      </div>
+  <script>
+    $(document).ready(function () {
+      $('#autoWidth').lightSlider({
+        autoWidth: true,
+        loop: true,
+        pause: 3000,
+        onSliderLoad: function () {
+          $('#autoWidth').removeClass('cs-hidden');
+        }
+      });
+    });
+  </script>
 
-      <div class="card">
-        <h3>Dante (Devil May Cry)</h3>
-        <img src="https://static.wikia.nocookie.net/devilmaycry/images/0/0e/Dante_DMC5.png" 
-             alt="Dante" style="width: 300px; border-radius: 10px;">
-        <p>Caçador de demônios com estilo e humor sarcástico, símbolo da série Devil May Cry.</p>
-      </div>
+  <style>
+    body {
+      background-color: black;
+      color: white;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
 
-      <div class="card">
-        <h3>Mega Man</h3>
-        <img src="https://static.wikia.nocookie.net/megaman/images/3/34/Mega_Man_render.png" 
-             alt="Mega Man" style="width: 300px; border-radius: 10px;">
-        <p>O robô azul criado para salvar o mundo dos planos malignos do Dr. Wily.</p>
-      </div>
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      background-color: #111;
+      display: flex;
+      justify-content: center;
+    }
 
-      <div class="card">
-        <h3>Ryu (Street Fighter)</h3>
-        <img src="https://static.wikia.nocookie.net/streetfighter/images/f/f3/Ryu_render_SF6.png" 
-             alt="Ryu" style="width: 300px; border-radius: 10px;">
-        <p>O lutador que busca a perfeição em sua arte marcial. Um dos símbolos dos jogos de luta.</p>
-      </div>
+    nav ul li {
+      margin: 10px 20px;
+    }
 
-      <div class="card">
-        <h3>Caçador (Monster Hunter)</h3>
-        <img src="https://static.wikia.nocookie.net/monsterhunter/images/d/d3/MHWorld_Hunter.png" 
-             alt="Hunter" style="width: 300px; border-radius: 10px;">
-        <p>Um guerreiro que enfrenta monstros gigantes em batalhas épicas, coletando materiais e forjando armas poderosas.</p>
-      </div>
-    </section>
-  </main>
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
 
+    nav ul li a:hover,
+    .ativo {
+      color: #f4c542;
+    }
+
+    .container {
+      margin-top: 40px;
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .box img {
+      width: 250px;
+      height: auto;
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+    }
+
+    .box img:hover {
+      transform: scale(1.05);
+    }
+
+    .lSPager.lSpg {
+      display: none !important;
+    }
+
+    #autoWidth li img {
+      width: 220px;
+      height: auto;
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+    }
+
+    #autoWidth li img:hover {
+      transform: scale(1.1);
+    }
   </style>
+
 </body>
+
 </html>
